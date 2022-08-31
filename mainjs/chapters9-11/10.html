@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var temperature = prompt("Enter the temperature");
+        switch (true) {
+            case (temperature > 40): console.log("It is too hot outside."); break;
+            case (temperature > 30 && temperature <= 40): console.log("The Weather today is Normal."); break;
+            case (temperature > 20 && temperature <= 30): console.log("Today's Weather is cool."); break;
+            case (temperature > 10 && temperature <= 20): console.log("OMG! Today's weather is so Cool."); break;
+            default: console.log("please enter a valid temperature of your surroundings.");
+        };
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+        document.write("Counting: " + num.slice(0, 15) + "<br>");
+        document.write("Reverse Counting: " + num.slice(0, 10).reverse() + "<br>");
+        document.write("Even: ");
+        for (i = 0; i <= num.length; i++) {
+            var j = i - 1
+            if (num[i] % 2 == 0) { document.write(num[i]) }
+            else if (num[j] < 20) { document.write(",") }
+        };
+
+        document.write("<br>" + "Odd: ");
+        for (i = 0; i <= num.length; i++) {
+            var j = i - 1
+            if (num[i] % 2 == 1) { document.write(num[i]) }
+            else if (num[j] < 19) { document.write(",") }
+        };
+
+        document.write("<br>" + "Series: ")
+        for (i = 0; i <= num.length; i++) {
+            var j = i - 1
+            if (num[i] % 2 == 0) { document.write(num[i] + "k") }
+            else if (num[j] < 19) { document.write(",") }
+        };
+
+    </script>
+    
+</body>
+
+</html>

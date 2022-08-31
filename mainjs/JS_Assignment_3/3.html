@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        colorNames = ["Red", "Orange", "Blue", "Black", "Yellow"];
+        document.write(colorNames);
+        var firstColor = prompt("Enter the color which you want to add to the beginnig.", "White");
+        colorNames.unshift(firstColor);
+        document.write("<br>" + colorNames);
+        var lastColor = prompt("Enter the color which you want to add to the beginnig.", "Pink");
+        colorNames.push(lastColor);
+        document.write("<br>" + colorNames);
+        twoColors = ["Purple", "Golden"];
+        colorNames.unshift(twoColors);
+        document.write("<br>" + colorNames);
+        colorNames.shift();
+        document.write("<br>" + colorNames);
+        colorNames.pop();
+        document.write("<br>" + colorNames);
+        addColorOnPosition = [prompt("Enter the color which you want to add"), prompt("Enter the position at which you want to add color")];
+        colorNames.splice(addColorOnPosition[1], 0, addColorOnPosition[0]);
+        document.write("<br>" + colorNames);
+        deleteColors = [prompt("Enter the position from which you want to delete color"), prompt("Enter the number of color which you want to delete")];
+        colorNames.splice(deleteColors[0], deleteColors[1]);
+        document.write("<br>" + colorNames)
+        
+    </script>
+</body>
+
+</html>

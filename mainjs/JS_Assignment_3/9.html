@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        A = [24, 53, 78, 91, 12];
+        console.log(A);
+        b = A.sort((a,b) => a-b);
+        c = b[b.length - 1];
+        for (i = 0; i <= A.length; i++) {
+            if (A[i] >= c) { console.log("The largest number is " + A[i]) }
+        };
+
+    </script>
+
+</body>
+
+</html>
